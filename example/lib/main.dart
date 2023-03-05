@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:sadad_flutter_sdk/entities/sadad_transaction.dart';
 import 'package:sadad_flutter_sdk/sadad_flutter_sdk.dart';
 
 void main() {
@@ -17,20 +16,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String _sadadResponse = 'did not start yet';
   final _sadadFlutterSdkPlugin = SadadFlutterSdk();
 
   @override
   void initState() {
     super.initState();
-    initPlatformState();
+    startSadadTransaction();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
+  Future<void> startSadadTransaction() async {
     String result;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
+
     var transaction = SadadTransaction(
       email: "a3bd2llah@gmail.com",
         mobileNumber: "97431487378",
@@ -42,16 +39,13 @@ class _MyAppState extends State<MyApp> {
     try {
       result = await _sadadFlutterSdkPlugin.createTransaction(transaction) ?? 'Unknown platform version';
     } on PlatformException {
-      result = 'Failed to get platform version.';
+      result = 'Failed to start sadad transaction';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = result;
+      _sadadResponse = result;
     });
   }
 
@@ -63,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text('Running on: $_sadadResponse\n'),
         ),
       ),
     );
