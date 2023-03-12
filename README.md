@@ -17,7 +17,9 @@ Here's how:
 ### Once you obtain the transaction token you are good to go
 
 <br>
+
 ![Alt Text](https://raw.githubusercontent.com/a3bd2lra7man/sadad_flutter_sdk/main/ezgif.com-optimize.gif)
+
 <br>
 
 # Usage
