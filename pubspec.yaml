@@ -1,6 +1,6 @@
 name: sadad_flutter_sdk
 description: Sadad Sdk implemented with flutter
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: '>=2.18.4 <3.0.0'

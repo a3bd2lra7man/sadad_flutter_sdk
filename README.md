@@ -3,6 +3,7 @@
 A Flutter plugin for integrating the Sadad payment SDK into your Flutter app.  
 This plugin provides a wrapper for the native [Sadad payment SDKs](https://developer.sadad.qa),   
 allowing you to use them in your Flutter project.
+<br>
 
 # Getting Started
 
@@ -14,6 +15,8 @@ Here's how:
 3. Obtain a transaction token from the Sadad server by calling the appropriate API endpoint from your backend **[See Application SDK Section](https://developer.sadad.qa)**
 
 ### Once you obtain the transaction token you are good to go
+
+<br>
 
 # Usage
 
@@ -63,6 +66,7 @@ Now You have the Sadad SDK soluation in your flutter app
 
 ***If you find this Sadad Flutter SDK plugin useful, please consider giving it a star on GitHub to show your support. Your feedback and suggestions are also welcome!***
 
+<br>
 
 > **Note:**  Please be aware that the Sadad Flutter SDK plugin will not work on iOS simulator due to limitations of the Sadad SDK.
 If you need to test your app on an iOS simulator, you can use the [sadad_flutter_ios_simulator](https://pub.dev/packages/sadad_flutter_ios_simulator) plugin, which provides a simulated environment for Sadad payment integration on iOS simulator.  
@@ -70,5 +74,9 @@ To use sadad_flutter_ios_simulator plugin, you can use the same example code pro
 ```dart
 import 'package:sadad_flutter_ios_simulator/sadad_flutter_ios_simulator.dart';
 ```
+<br>
 
 > **Note:** Please note that if you use both the sadad_flutter_sdk and sadad_flutter_ios_simulator packages in your app at the same time, you will encounter a package naming conflict error on iOS. Therefore, you can only use one of these packages at a time, depending on your testing and deployment needs.
+
+<br>
+<br>
