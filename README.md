@@ -27,7 +27,7 @@ Here's how:
 1. Add sadad_flutter_sdk to your pubspec.yaml file:
 ```yaml
 dependencies:
-  sadad_flutter_sdk: ^0.0.4
+  sadad_flutter_sdk: ^0.0.5
 ```
 2. Import the package into your code:
 ```dart
