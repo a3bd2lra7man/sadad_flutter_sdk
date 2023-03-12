@@ -17,12 +17,8 @@ Here's how:
 ### Once you obtain the transaction token you are good to go
 
 <br>
-<br>
 
-<div style="text-align: center; display: flex ; justify-content: center ; align-items: center ; margin: 0 auto;">
-    <img src="https://raw.githubusercontent.com/a3bd2lra7man/sadad_flutter_sdk/main/ezgif.com-optimize.gif" width="220" height="480" align="center">
-</div>
-
+![Alt Text](https://raw.githubusercontent.com/a3bd2lra7man/sadad_flutter_sdk/main/ezgif.com-optimize.gif)
 
 <br>
 
@@ -31,7 +27,7 @@ Here's how:
 1. Add sadad_flutter_sdk to your pubspec.yaml file:
 ```yaml
 dependencies:
-  sadad_flutter_sdk: ^0.0.6
+  sadad_flutter_sdk: ^0.0.5
 ```
 2. Import the package into your code:
 ```dart
