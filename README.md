@@ -11,7 +11,7 @@ To use the Sadad Flutter plugin in your project, you'll need to create a Sadad a
 Here's how:
 
 1. Create a Sadad account and obtain your **merchantId**,**secretKey**
-2. Integrate the Sadad backend into your app by following the integration guide provided by Sadad.
+2. Integrate the Sadad backend into your system by following the integration guide provided by Sadad.
 3. Obtain a transaction token from the Sadad server by calling the appropriate API endpoint from your backend **[See Application SDK Section](https://developer.sadad.qa)**
 
 ### Once you obtain the transaction token you are good to go
@@ -23,7 +23,7 @@ Here's how:
 1. Add sadad_flutter_sdk to your pubspec.yaml file:
 ```yaml
 dependencies:
-  sadad_flutter_sdk: ^0.0.1+1
+  sadad_flutter_sdk: ^0.0.4
 ```
 2. Import the package into your code:
 ```dart
@@ -64,7 +64,7 @@ If the user cancels the transaction, the result may be null.
 
 Now You have the Sadad SDK soluation in your flutter app
 
-***If you find this Sadad Flutter SDK plugin useful, please consider giving it a star on GitHub to show your support. Your feedback and suggestions are also welcome!***
+***If you find this Sadad Flutter SDK plugin useful, please consider giving it a star on [GitHub](https://github.com/a3bd2lra7man/sadad_flutter_sdk) to show your support. Your feedback and suggestions are also welcome!***
 
 <br>
 
