@@ -19,8 +19,8 @@ Here's how:
 <br>
 <br>
 
-<div style="text-align: center;">
-<img src="https://raw.githubusercontent.com/a3bd2lra7man/sadad_flutter_sdk/main/ezgif.com-optimize.gif" width="180" height="400" align="center">
+<div style="text-align: center; display:flex; justify-content:center">
+    <img src="https://raw.githubusercontent.com/a3bd2lra7man/sadad_flutter_sdk/main/ezgif.com-optimize.gif" width="180" height="400" align="center">
 </div>
 
 
