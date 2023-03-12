@@ -17,7 +17,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _sadadResponse = 'did not start yet';
-  final _sadadFlutterSdkPlugin = SadadFlutterSdk();
 
   @override
   void initState() {
@@ -28,6 +27,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> startSadadTransaction() async {
     String result;
 
+    final _sadadFlutterSdkPlugin = SadadFlutterSdk();
     var transaction = SadadTransaction(
       email: "a3bd2llah@gmail.com",
         mobileNumber: "97431487378",
@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
     try {
       result = await _sadadFlutterSdkPlugin.createTransaction(transaction) ?? 'null';
     } on PlatformException {
-      result = 'Failed to start sadad transaction';
+      result = 'Platfor Exception';
     }
 
     if (!mounted) return;
