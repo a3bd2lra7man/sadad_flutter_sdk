@@ -32,12 +32,12 @@ class _MyAppState extends State<MyApp> {
       email: "a3bd2llah@gmail.com",
         mobileNumber: "97431487378",
         customerId: "123456789",
-        clientToken: "",
+        clientToken: "put your token here",
         transactionAmount: "10000.0",
         orderItems: [const SadadOrderItem(name: "top up", quantity: 1, amount: 10000)],
         orderId: "123456789");
     try {
-      result = await _sadadFlutterSdkPlugin.createTransaction(transaction) ?? 'Unknown platform version';
+      result = await _sadadFlutterSdkPlugin.createTransaction(transaction) ?? 'null';
     } on PlatformException {
       result = 'Failed to start sadad transaction';
     }
@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_sadadResponse\n'),
+          child: Text('Sadad result is: $_sadadResponse\n'),
         ),
       ),
     );

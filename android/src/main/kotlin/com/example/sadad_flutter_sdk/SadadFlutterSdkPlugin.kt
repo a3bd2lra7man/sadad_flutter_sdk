@@ -45,16 +45,16 @@ class SadadFlutterSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                 )
             )
         } catch (e: Exception) {
-            result.success("Unkown Exception $e")
+            result.success(null)
         }
     }
 
     private fun onSuccess(result: Result, response: SadadTransactionResult) {
-        result.success(response.transactionNumber!!)
+        result.success(response.transactionNumber)
     }
 
     private fun onField(result: Result, response: SadadTransactionResult) {
-        result.success(response.message)
+        result.success(response.transactionNumber)
     }
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {

@@ -31,10 +31,10 @@ public class SwiftSadadFlutterSdkPlugin: NSObject, FlutterPlugin,SelectCardRepon
     public func ResponseData(DataDIC: NSMutableDictionary) {
         DispatchQueue.main.async {
             SadadTransactionCallBackProcessor(onSuccess: { sadadResult in
-                self.result?(sadadResult)
+                self.result?(sadadResult.transactionNumber)
                 
             }, onFailed:{ sadadResult in
-                self.result?(sadadResult)
+                self.result?(sadadResult.transactionNumber)
             }).onSadadResponse(DataDIC: DataDIC)
         }
     }
